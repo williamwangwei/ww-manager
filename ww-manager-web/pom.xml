@@ -5,7 +5,6 @@
     <artifactId>ww-manager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>ww-manager-web</groupId>
   <artifactId>ww-manager-web</artifactId>
   <packaging>war</packaging>
 </project>

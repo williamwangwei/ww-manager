@@ -20,13 +20,15 @@
 
 		<dependency>
 			<groupId>ww-manager-pojo</groupId>
-			<artifactId>ww-manager-pojo</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+  			<artifactId>ww-manager-pojo</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+		
 		<!-- Mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -43,10 +45,11 @@
 		</dependency> -->
 
 		<!-- oracle -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc14</artifactId>
-		</dependency>
+		
+		<!-- <dependency>
+		    <groupId>com.oracle</groupId>
+		    <artifactId>ojdbc14</artifactId>
+		</dependency> -->
 
 
 		<!-- 连接池 -->

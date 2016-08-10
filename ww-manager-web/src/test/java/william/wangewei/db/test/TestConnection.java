@@ -27,33 +27,6 @@ public class TestConnection {
 				ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
 				JdbcTemplate jdbcTemplate = (JdbcTemplate)ac.getBean("jdbcTemplate");
 				String sql = "select * from dept";
-				List<Map<String, Object>> resList = jdbcTemplate.query(sql, new ResultSetExtractor<List<Map<String,Object>>>(){
-
-					@Override
-					public List<Map<String,Object>> extractData(ResultSet rs) throws SQLException, DataAccessException {
-						List<Map<String,Object>> resList =null;
-						
-						resList = new ArrayList<Map<String,Object>>();
-						while(rs.next()){
-							Map<String,Object> map = new HashMap<String,Object>();
-							
-							map.put("DNAME", rs.getString("DNAME"));
-							map.put("LOC", rs.getString("LOC"));
-							map.put("DEPTNO", rs.getInt("DEPTNO"));
-							resList.add(map);
-						}
-						
-						return resList;
-					}
-					
-				});
-				
-				for (Map<String, Object> map : resList) {
-					for (String key : map.keySet()) {
-						System.out.print(map.get(key));
-					}
-					System.out.println("------一条记录------");
-				}
 	}
 	
 	@Test
